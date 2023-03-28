@@ -1,12 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Hello world</h1>
+    <div id="image">
+        <div class="p-10 antialised text-[#f3f3f3]">
+            <h1 class="text-4xl font-semibold text-center">freeCodeCamp Survey Form</h1>
+            <p class="text-xl mt-3 text-center">Thank you for taking the time to help us improve the platform</p>
+            <div class="mx-auto sm:max-w-xl  md:max-w-3xl mt-8 bg-[#1b1b32]/80 rounded survey">
+                <form action="survet-form ">
+                    <div class="px-8 py-10 ">
+                        <div class="flex flex-col mb-8">
+                            <label for="name" class="text-xl">Name</label>
+                            <input type="text"
+                                class="mt-3 w-full rounded px-3 py-2 hover:outline-none focus:outline-none focus:ring-red-900 focus:ring-2"
+                                placeholder="Enter your name">
+                        </div>
+                        <div class="flex flex-col mb-8">
+                            <label for="name" class="text-xl">Email</label>
+                            <input type="email"
+                                class="mt-3 w-full rounded px-3 py-2 hover:outline-none focus:outline-none focus:ring-red-900 focus:ring-2"
+                                placeholder="Enter your email">
+                        </div>
+                        <div class="flex flex-col mb-8">
+                            <label for="name" class="text-xl">Age<small> (Optional)</small></label>
+                            <input type="number"
+                                class="mt-3 w-full rounded px-3 py-2 hover:outline-none focus:outline-none focus:ring-red-900 focus:ring-2"
+                                placeholder="Age">
+                        </div>
+                        <div class="flex flex-col mb-8">
+                            <label for="name" class="text-xl">Which option best describes your current role?</label>
+                            <select data-te-select-init
+                                class="text-gray-600 mt-3 w-full rounded px-3 py-2 hover:outline-none focus:outline-none focus:ring-red-900 focus:ring-2">
+                                <option disabled selected>Select current role</option>
+                                <option value="student">Student</option>
+                                <option value="job">Full Time Job</option>
+                                <option value="leaner">Full Time Leaner</option>
+                                <option value="preferNo">Prefer not to say</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <!-- start here -->
+                        
+                        
+                        <div class="mb-10">
+                            <button type="submit" class="bg-[#37af65] p-4 w-full">Save</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
